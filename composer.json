@@ -1,0 +1,40 @@
+{
+    "name": "bileslav/react-on-amp",
+    "description": "ReactPHP/AMPHP compatibility utilities",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bileslav\\AmpedReact\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "examples/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vlad Biley"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "amphp/amp": "^3.0",
+        "bileslav/utils": "dev-main",
+        "psr/http-message": "^1.1",
+        "react/promise": "^2.10",
+        "revolt/event-loop": "^1.0",
+        "revolt/event-loop-adapter-react": "^1.1"
+    },
+    "require-dev": {
+        "react/async": "^4.0",
+        "react/http": "^1.9",
+        "react/promise-timer": "^1.9"
+    }
+}
